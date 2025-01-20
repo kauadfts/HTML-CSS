@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        table {
+            width: 650px;
+            border-collapse: collapse;
+        }
+
+        caption{
+            font-size: 1.3em;
+            font-weight: bold;
+            padding: 10px;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        td {
+           text-align: left;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Filmes dos meus amigos</h1>
+    <table>
+        <caption>Filmes favoritos</caption>
+        <thead>
+            <tr>
+                <th scope="col">Grupos</th>
+                <th scope="col">Nomes</th>
+                <th colspan="3" scope="colgroup">Filmes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="3" scope="rowgroup">Mulher</th>
+                <td>Ana maria Santos</td>
+                <td>Alien</td>
+                <td>Rambo</td>
+                <td>Vingadores</td>
+            </tr>
+            <tr>
+                <td>Beatriz Souza</td>
+                <td>Hulk</td>
+                <td>Inception</td>
+                <td>Batman</td>
+            </tr>
+            <tr>
+                <td>Amorzin (Thaby)</td>
+                <td>Para todos os garotos que já amei</td>
+                <td>Anne with E</td>
+                <td>Rapunzel</td>
+            </tr>
+            <tr>
+                <th rowspan="3" scope="rowgroup">Homem</th>
+                <td>Leozinho</td>
+                <td>Telefone Preto</td>
+                <td>Homem aranha que não pra casa</td>
+                <td>Sonic</td>
+            </tr>
+            <tr>
+                <td>Pedro bola</td>
+                <td>Carrossel o Filme</td>
+                <td>Truque de Mestre 2</td>
+                <td>Sorria</td>
+            </tr>
+            <tr>
+                <td>Web Arthur</td>
+                <td>Lucas Neto e o Natal mágico</td>
+                <td>Dragon Ball super Hero</td>
+                <td>Liga da Justiça</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="4" scope="row">Total</th>
+                <td>1000</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
