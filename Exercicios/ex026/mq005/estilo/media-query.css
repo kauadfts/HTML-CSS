@@ -2,18 +2,20 @@
 
 /* Media Queries */
 
-@media print {
+@media screen and (min-width: 768px) {
+    i#burguer{
+        display: none;
+    }
 
-}
+    menu{
+        display: block;
+    }
 
-@media screen and (min-width: 768px) and (max-width: 992px) {
+    menu li{
+        display: inline-block;
+    }
 
-}
-
-@media screen and (min-width: 992px) and (max-width: 1400px) {
-
-}
-
-@media screen and (min-width: 1400px) {
-    
+    main{
+        width: 768px;
+    }
 }
